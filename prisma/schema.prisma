@@ -1,0 +1,104 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model alchemist {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  dialog   String
+  info     String
+  no       Int
+  question String
+  yes      Int
+}
+
+model calvinothecook {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  dialog   String
+  info     String
+  no       Int
+  question String
+  yes      Int
+}
+
+model farmer {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  dialog   String
+  info     String
+  no       Int
+  question String
+  yes      Int
+}
+
+model knight {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  dialog   String
+  info     String
+  no       Int
+  question String
+  yes      Int
+}
+
+model merchant {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  dialog   String
+  info     String
+  no       Int
+  question String
+  yes      Int
+}
+
+model prince {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  dialog   String
+  info     String
+  no       Int
+  question String
+  yes      Int
+}
+
+model princesszizola {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  dialog   String
+  info     String
+  no       Int
+  question String
+  yes      Int
+}
+
+model prisoner {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  dialog   String
+  info     String
+  no       Int
+  question String
+  yes      Int
+}
+
+model queen {
+  id       String  @id @default(auto()) @map("_id") @db.ObjectId
+  dialog   String
+  info     String?
+  no       Int
+  question String
+  yes      Int
+}
+
+model trustedservant {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  dialog   String
+  info     String
+  no       Int
+  question String
+  yes      Int
+}
+
+model user {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  name String
+  score Int
+}
